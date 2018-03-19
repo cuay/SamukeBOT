@@ -19,3 +19,7 @@ A custom, powerful Discord bot.
 # Support / Contact
 
 - [Website](https://cuay.xyz)
+
+# Concept
+
+- Imports included: `npm init`, `npm install --save discord.js`, `npm install --save yt-dl`, `npm install --save ffmpeg-binaries`
