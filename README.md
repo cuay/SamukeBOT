@@ -15,3 +15,7 @@ A custom, powerful Discord bot.
 - Different SQL databases, not included in directory
 - Music bot [In Development!]
 - Imports of FFMPEG / YT-DL / GoogleAPI / ShawnDours' API
+
+# Support / Contact
+
+- [Website](https://cuay.xyz)
