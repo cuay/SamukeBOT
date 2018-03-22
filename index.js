@@ -51,6 +51,17 @@ client.on('message', async message=> {
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const cmd = args.shift().toLowerCase();
 
+    if(message.content.startsWith(`${prefix}submit`)){
+        if(message.channel.id != "425443810890219543"){
+            return message.guild.channels.find("name", "christian-chat").send(`${message.author}, please use the !submit command in #submit-evidence!`)
+        }
+
+        const submission = args.join(" ");
+        message.delete().catch(O_o=>{});
+        message.guild.channels.find("name", "reporting").send("New submission:" + submission);
+
+    }
+
     if(message.content.startsWith(`${prefix}marry`)){
         let proposal = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
         if(!proposal) {message.channel.send("Cannot find user!"); return;}
@@ -348,7 +359,7 @@ client.on('message', async message=> {
       */
 
 
-client.login(token);
+client.login(process.env.BOT_TOKEN);
 
 
 
